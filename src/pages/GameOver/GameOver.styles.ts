@@ -3,45 +3,39 @@ import styled from 'styled-components';
 export const Background = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-content: center;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right bottom, white 50%, #FFF3EB 50%);
-  
-  @media only screen and (max-device-width: 768px) {
-    flex-direction: column;
-    height: unset;
-    margin: unset;
-  }
 `;
 
 export const Button = styled.button`
   display: flex;
-  height: 64px;
+  height: 4rem;
   background: #FF8B37;
-  border-radius: 12px;
-  width: 25%;
+  border-radius: 0.875rem;
+  border: unset;
 
-  font-family: Inter,serif;
-  font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.375rem;
   line-height: 116%;
-/* or 23px */
 
   justify-content: center;
   align-items: center;
   text-align: center;
 
   color: #FFFFFF;
+  
+  @media only screen and (min-device-width: 768px) {
+    width: 50%;
+  }
 `;
 
 export const Container = styled.div`
   display: flex;
   flex-grow: 1;
   margin: 0 1rem;
-  width: 50%;
 
   @media only screen and (max-device-width: 768px) {
     width: unset;
@@ -57,32 +51,28 @@ export const TextContainer = styled.div`
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  align-self: center;
-  padding: 0;
-  text-wrap: normal;
 `;
 
-export const Text = styled.div`
-/* Desktop / Headline */
-
-  font-family: Inter,serif;
-  font-style: normal;
+export const DefaultText = styled.text`
   font-weight: 600;
-  font-size: 56px;
+  font-size: 2rem;
   line-height: 116%;
-/* or 65px */
 
   display: flex;
+  align-self: center;
+`;
 
-/* Black-100 */
+export const Text = styled.h1`
+  display: flex;
+
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 116%;
 
   color: #1C1C21;
-
-/* Inside Auto Layout */
 
   flex: none;
   order: 0;
   flex-grow: 0;
   white-space: pre;
-  padding-bottom: 4rem;
 `;

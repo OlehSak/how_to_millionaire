@@ -1,13 +1,14 @@
 import React from 'react';
 
 import {
-  Button,
   Hand,
   Text,
   Container,
   Background,
   TextContainer,
 } from './StartGame.styles';
+
+import { Button } from '../GameOver/GameOver.styles';
 
 const HandSVG = require('../../assets/Hand.svg');
 

@@ -16,27 +16,6 @@ export const Background = styled.div`
   }
 `;
 
-export const Button = styled.button`
-  display: flex;
-  height: 64px;
-  background: #FF8B37;
-  border-radius: 12px;
-  width: 25%;
-
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 116%;
-/* or 23px */
-
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  color: #FFFFFF;
-`;
-
 export const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -49,37 +28,32 @@ export const LeftContainer = styled.div`
 `;
 
 export const ButtonBox = styled.div`
+  flex-direction: row;
+  flex-wrap: wrap;
   max-width: 100%;
   max-height: 100%;
 `;
 
-export const TextContainer = styled.div`
+export const DefaultText = styled.h1`
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  align-self: center;
-  padding: 0;
-  text-wrap: normal;
+  margin-left: 4rem;
+  margin-top: 10rem;
+
+font-weight: 600;
+font-size: 2rem;
+line-height: 116%;
 `;
 
 export const Text = styled.div`
-/* Desktop / Headline */
-
-  font-family: Inter,serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 3.5rem;
   line-height: 116%;
-/* or 65px */
 
   display: flex;
 
-/* Black-100 */
-
   color: #1C1C21;
-
-/* Inside Auto Layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -91,6 +65,6 @@ export const StepContainer = styled.div`
   width: 30%;
   flex-direction: column;
   text-align: center;
-  justify-content: right;
+  justify-content: center;
   background: #FFFFFF;
 `;

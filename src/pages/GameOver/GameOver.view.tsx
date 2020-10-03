@@ -6,6 +6,7 @@ import {
   Text,
   Container,
   Background,
+  DefaultText,
   TextContainer,
 } from './GameOver.styles';
 
@@ -24,11 +25,18 @@ function GameOver({ value, onClick }: StartGameProps):JSX.Element {
       </Container>
       <Container>
         <TextContainer>
+          <DefaultText>
+            Total score:
+          </DefaultText>
           <Text>
-            {value}
-            earned
+            {new Intl.NumberFormat('en-US', {
+              style: 'currency',
+              currency: 'USD',
+              maximumSignificantDigits: 1,
+            }).format(value)}
+            {' earned'}
           </Text>
-          <Button onClick={onClick}>Start</Button>
+          <Button onClick={onClick}>Try again</Button>
         </TextContainer>
       </Container>
     </Background>

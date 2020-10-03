@@ -7,7 +7,7 @@ import {
   Variant,
 } from './AnswerButton.styles';
 
-import Rectangle from '../../assets/Rectangle 4.svg';
+import button from '../../assets/Button.svg';
 
 export interface AnswerButtonProps {
   answer: string
@@ -22,9 +22,11 @@ export default function AnswerButton({
 }: AnswerButtonProps):JSX.Element {
   return (
     <Component onClick={():void => onClick(number_answer)}>
-      <Img src={Rectangle} />
-      <Variant>{number_answer}</Variant>
-      <Text>{answer}</Text>
+      <Img src={button} />
+      <Text>
+        <Variant>{number_answer}</Variant>
+        {answer}
+      </Text>
     </Component>
   );
 }

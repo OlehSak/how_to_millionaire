@@ -10,12 +10,18 @@ function App():JSX.Element {
   const [endGame, setEndGame] = React.useState(false);
   const [backToStart, setBackToStart] = React.useState(true);
 
-  const [answerArray, setAnswerArray] = React.useState<string[]>([]);
-  const [number, setNumber] = React.useState<number>(0);
+  const [answerArray, setAnswerArray] = React.useState<string[] | undefined>([]);
+  const [question, setQuestion] = React.useState<string>(' ');
+  const [stepArray, setStepArray] = React.useState<number[] | undefined>([]);
+  const [numberOfQuestion, setNumberOfQuestion] = React.useState<number>(0);
 
   const goGame = (): void => {
-    setNumber(0);
-    setAnswerArray(jsonString[0].questions[0].answers);
+    setNumberOfQuestion(0);
+    // @ts-ignore
+    setAnswerArray(jsonString[0]?.questions[0].answers);
+    setStepArray(jsonString[1].step_array);
+    // @ts-ignore
+    setQuestion(jsonString[0]?.questions[0].question);
   };
 
   const onStartGame = (): void => {
@@ -38,21 +44,37 @@ function App():JSX.Element {
   };
 
   const nextQuestion = (value: number): void => {
-    if (value === jsonString[0].questions[number].correct_answer
-      && jsonString[0].questions.length > number + 1) {
-      setAnswerArray(jsonString[0].questions[number + 1].answers);
-      setNumber(number + 1);
-      // eslint-disable-next-line no-console
-      console.log('TRUE');
-      // eslint-disable-next-line no-console
-    } else { onEndGame(); console.log('FALSE'); }
+    // @ts-ignore
+    if (value === jsonString[0]?.questions[numberOfQuestion].correct_answer
+      && jsonString[0]?.questions?.length > numberOfQuestion + 1) {
+      setAnswerArray(jsonString[0].questions[numberOfQuestion + 1].answers);
+      setNumberOfQuestion(numberOfQuestion + 1);
+      setQuestion(jsonString[0]?.questions[numberOfQuestion + 1]?.question || '');
+    } else { onEndGame(); }
   };
 
   return (
     <>
       {backToStart && <StartGame onClick={onStartGame} />}
-      {endGame && <Game onAnswer={nextQuestion} onClick={onEndGame} answerArray={answerArray} />}
-      {startGame && <GameOver value={number} onClick={onBackGame} />}
+      {endGame
+      && (
+        <Game
+          onAnswer={nextQuestion}
+          onClick={onEndGame}
+          answerArray={answerArray}
+          numberOfQuestion={numberOfQuestion}
+          stepArray={stepArray}
+          question={question}
+        />
+      )}
+      {startGame
+      && (
+      <GameOver
+        // @ts-ignore
+        value={jsonString[1]?.step_array[numberOfQuestion - 1] || 0}
+        onClick={onBackGame}
+      />
+      )}
     </>
   );
 }
