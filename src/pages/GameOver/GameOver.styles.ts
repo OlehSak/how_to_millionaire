@@ -36,10 +36,6 @@ export const Container = styled.div`
   display: flex;
   flex-grow: 1;
   margin: 0 1rem;
-
-  @media only screen and (max-device-width: 768px) {
-    width: unset;
-  }
 `;
 
 export const Hand = styled.img`
@@ -66,7 +62,7 @@ export const Text = styled.h1`
   display: flex;
 
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 116%;
 
   color: #1C1C21;
@@ -75,4 +71,5 @@ export const Text = styled.h1`
   order: 0;
   flex-grow: 0;
   white-space: pre;
+  align-self: center;
 `;

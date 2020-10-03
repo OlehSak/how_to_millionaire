@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import HiddenButton from '../../components/HiddenButton';
 
 export const Background = styled.div`
   display: flex;
@@ -67,4 +68,10 @@ export const StepContainer = styled.div`
   text-align: center;
   justify-content: center;
   background: #FFFFFF;
+`;
+
+export const MHiddenButton = styled(HiddenButton)`
+  position: absolute;
+  left: 0;
+  top: 0;
 `;
