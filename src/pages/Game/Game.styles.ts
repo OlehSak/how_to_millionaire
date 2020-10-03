@@ -9,12 +9,10 @@ export const Background = styled.div`
   width: 100%;
   height: 100%;
   background: #F5F5F7;
-  
-  @media only screen and (max-device-width: 768px) {
-    flex-direction: column;
-    height: unset;
-    margin: unset;
-  }
+`;
+
+export const MobileBackground = styled(Background)`
+  flex-direction: column;
 `;
 
 export const LeftContainer = styled.div`
@@ -42,9 +40,9 @@ export const DefaultText = styled.h1`
   margin-left: 4rem;
   margin-top: 10rem;
 
-font-weight: 600;
-font-size: 2rem;
-line-height: 116%;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 116%;
 `;
 
 export const Text = styled.div`
@@ -70,8 +68,21 @@ export const StepContainer = styled.div`
   background: #FFFFFF;
 `;
 
+export const MobileStepContainer = styled(StepContainer)`
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+`;
+
 export const MHiddenButton = styled(HiddenButton)`
   position: absolute;
-  left: 0;
+  align-self: end;
+  width: 100%;
+  right: 0;
   top: 0;
+`;
+
+export const MobileContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

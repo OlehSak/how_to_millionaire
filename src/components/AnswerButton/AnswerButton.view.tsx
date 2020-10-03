@@ -4,7 +4,8 @@ import {
   Component,
   Text,
   Img,
-  Variant,
+  Number,
+  Question,
 } from './AnswerButton.styles';
 
 import button from '../../assets/Button.svg';
@@ -24,8 +25,8 @@ export default function AnswerButton({
     <Component onClick={():void => onClick(number_answer)}>
       <Img src={button} />
       <Text>
-        <Variant>{number_answer}</Variant>
-        {answer}
+        <Number>{number_answer + 1}</Number>
+        <Question>{answer}</Question>
       </Text>
     </Component>
   );

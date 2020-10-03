@@ -1,12 +1,15 @@
 import React from 'react';
 
 import {
+  MobileContainer,
   MHiddenButton,
   LeftContainer,
   Background,
   StepContainer,
   DefaultText,
   ButtonBox,
+  MobileBackground,
+  MobileStepContainer,
 } from './Game.styles';
 
 import Step from '../../components/Step';
@@ -43,27 +46,25 @@ function Game({
     <>
       {isMobile
         ? (
-          <Background>
+          <MobileBackground>
             <MHiddenButton onClick={setOpenSteps} value={openSteps} />
             {openSteps
               ? (
-                <>
-                  <LeftContainer>
-                    <DefaultText>{question}</DefaultText>
-                    <ButtonBox>
-                      {answerArray?.map((value, index):JSX.Element => (
-                        <AnswerButton
-                          key={value + index}
-                          onClick={onAnswer}
-                          answer={value}
-                          number_answer={index}
-                        />
-                      ))}
-                    </ButtonBox>
-                  </LeftContainer>
-                </>
+                <MobileContainer>
+                  <DefaultText>{question}</DefaultText>
+                  <ButtonBox>
+                    {answerArray?.map((value, index):JSX.Element => (
+                      <AnswerButton
+                        key={value + index}
+                        onClick={onAnswer}
+                        answer={value}
+                        number_answer={index}
+                      />
+                    ))}
+                  </ButtonBox>
+                </MobileContainer>
               ) : (
-                <StepContainer>
+                <MobileStepContainer>
                   {stepArray?.map((value, index):JSX.Element => (
                     <Step
                       key={value + index}
@@ -72,9 +73,9 @@ function Game({
                       color={CalculateColor(index, numberOfQuestion)}
                     />
                   )).reverse()}
-                </StepContainer>
+                </MobileStepContainer>
               )}
-          </Background>
+          </MobileBackground>
         )
         : (
           <Background>
