@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/how_to_millionaire/static/css/main.8bb91e14.chunk.css",
+    "main.js": "/how_to_millionaire/static/js/main.3102fe5a.chunk.js",
+    "main.js.map": "/how_to_millionaire/static/js/main.3102fe5a.chunk.js.map",
+    "runtime-main.js": "/how_to_millionaire/static/js/runtime-main.78c0d121.js",
+    "runtime-main.js.map": "/how_to_millionaire/static/js/runtime-main.78c0d121.js.map",
+    "static/js/2.74fcaa05.chunk.js": "/how_to_millionaire/static/js/2.74fcaa05.chunk.js",
+    "static/js/2.74fcaa05.chunk.js.map": "/how_to_millionaire/static/js/2.74fcaa05.chunk.js.map",
+    "index.html": "/how_to_millionaire/index.html",
+    "precache-manifest.19d7b767babe6bcc3686e05cdc3c1bdf.js": "/how_to_millionaire/precache-manifest.19d7b767babe6bcc3686e05cdc3c1bdf.js",
+    "service-worker.js": "/how_to_millionaire/service-worker.js",
+    "static/css/main.8bb91e14.chunk.css.map": "/how_to_millionaire/static/css/main.8bb91e14.chunk.css.map",
+    "static/js/2.74fcaa05.chunk.js.LICENSE.txt": "/how_to_millionaire/static/js/2.74fcaa05.chunk.js.LICENSE.txt",
+    "static/media/Button.svg": "/how_to_millionaire/static/media/Button.d9fef2b5.svg",
+    "static/media/Close.svg": "/how_to_millionaire/static/media/Close.60007eb9.svg",
+    "static/media/Hand.svg": "/how_to_millionaire/static/media/Hand.f7dd51f8.svg",
+    "static/media/Menu.svg": "/how_to_millionaire/static/media/Menu.ef9ecc44.svg",
+    "static/media/current_question.svg": "/how_to_millionaire/static/media/current_question.da2d36e0.svg",
+    "static/media/inactive_question.svg": "/how_to_millionaire/static/media/inactive_question.6eade976.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78c0d121.js",
+    "static/js/2.74fcaa05.chunk.js",
+    "static/css/main.8bb91e14.chunk.css",
+    "static/js/main.3102fe5a.chunk.js"
+  ]
+}
