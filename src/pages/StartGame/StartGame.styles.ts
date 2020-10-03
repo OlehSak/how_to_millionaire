@@ -27,17 +27,18 @@ export const TextContainer = styled.div`
   flex-grow: 1;
   flex-direction: column;
   align-self: center;
-  padding: 0;
   text-wrap: normal;
 `;
 
 export const Text = styled.div`
+  display: flex;
+
   font-weight: 600;
   font-size: 6vh;
   line-height: 116%;
-  display: flex;
 
   color: #1C1C21;
+  
   flex: none;
   order: 0;
   flex-grow: 0;

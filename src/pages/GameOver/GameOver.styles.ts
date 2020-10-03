@@ -47,6 +47,8 @@ export const TextContainer = styled.div`
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  align-self: center;
+  text-wrap: normal;
 `;
 
 export const DefaultText = styled.text`
@@ -56,6 +58,9 @@ export const DefaultText = styled.text`
 
   display: flex;
   align-self: center;
+  @media only screen and (min-device-width: 768px) {
+    align-self: unset;
+  }
 `;
 
 export const Text = styled.h1`
@@ -72,4 +77,8 @@ export const Text = styled.h1`
   flex-grow: 0;
   white-space: pre;
   align-self: center;
+  
+  @media only screen and (min-device-width: 768px) {
+    align-self: unset;
+  }
 `;
