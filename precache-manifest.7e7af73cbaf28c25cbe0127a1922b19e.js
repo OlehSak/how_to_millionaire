@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db39747fe53fee31d7277d8c8911bcdb",
+    "revision": "8ee8075b048059d021c543a1d8f7580c",
     "url": "/how_to_millionaire/index.html"
   },
   {
-    "revision": "2e52abc2ff7eeef66df5",
+    "revision": "96be32936a3465ee4de4",
     "url": "/how_to_millionaire/static/css/main.8bb91e14.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/how_to_millionaire/static/js/2.74fcaa05.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2e52abc2ff7eeef66df5",
-    "url": "/how_to_millionaire/static/js/main.3102fe5a.chunk.js"
+    "revision": "96be32936a3465ee4de4",
+    "url": "/how_to_millionaire/static/js/main.be14537b.chunk.js"
   },
   {
     "revision": "32d656ead80873289b6a",
