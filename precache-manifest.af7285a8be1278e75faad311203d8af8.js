@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ee8075b048059d021c543a1d8f7580c",
+    "revision": "bbfbdf234ea280a4fe4f206c3e42be6e",
     "url": "/how_to_millionaire/index.html"
   },
   {
-    "revision": "96be32936a3465ee4de4",
+    "revision": "465931ed20d1946473d0",
     "url": "/how_to_millionaire/static/css/main.8bb91e14.chunk.css"
   },
   {
-    "revision": "868e433c02a9cb23b7a8",
-    "url": "/how_to_millionaire/static/js/2.74fcaa05.chunk.js"
+    "revision": "d3449eb8889c3cfb2ada",
+    "url": "/how_to_millionaire/static/js/2.9faaade4.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/how_to_millionaire/static/js/2.74fcaa05.chunk.js.LICENSE.txt"
+    "url": "/how_to_millionaire/static/js/2.9faaade4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "96be32936a3465ee4de4",
-    "url": "/how_to_millionaire/static/js/main.be14537b.chunk.js"
+    "revision": "465931ed20d1946473d0",
+    "url": "/how_to_millionaire/static/js/main.0341088b.chunk.js"
   },
   {
     "revision": "32d656ead80873289b6a",
@@ -32,12 +32,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/how_to_millionaire/static/media/Close.60007eb9.svg"
   },
   {
+    "revision": "a600a40c9f46da4a21b59decde227c65",
+    "url": "/how_to_millionaire/static/media/Correct.a600a40c.svg"
+  },
+  {
     "revision": "f7dd51f89fef7eab3d7737952179f869",
     "url": "/how_to_millionaire/static/media/Hand.f7dd51f8.svg"
   },
   {
     "revision": "ef9ecc4447821536999c3cdd6ed31f34",
     "url": "/how_to_millionaire/static/media/Menu.ef9ecc44.svg"
+  },
+  {
+    "revision": "43f130dd23c79e7ca5ef157d752262c9",
+    "url": "/how_to_millionaire/static/media/Selected.43f130dd.svg"
+  },
+  {
+    "revision": "e37ef584e20517186506ea6877ff7469",
+    "url": "/how_to_millionaire/static/media/Wrong.e37ef584.svg"
   },
   {
     "revision": "da2d36e0f09bdf0418c934b6f0de0c66",

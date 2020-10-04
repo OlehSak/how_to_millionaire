@@ -1,28 +1,31 @@
 {
   "files": {
     "main.css": "/how_to_millionaire/static/css/main.8bb91e14.chunk.css",
-    "main.js": "/how_to_millionaire/static/js/main.be14537b.chunk.js",
-    "main.js.map": "/how_to_millionaire/static/js/main.be14537b.chunk.js.map",
+    "main.js": "/how_to_millionaire/static/js/main.0341088b.chunk.js",
+    "main.js.map": "/how_to_millionaire/static/js/main.0341088b.chunk.js.map",
     "runtime-main.js": "/how_to_millionaire/static/js/runtime-main.78c0d121.js",
     "runtime-main.js.map": "/how_to_millionaire/static/js/runtime-main.78c0d121.js.map",
-    "static/js/2.74fcaa05.chunk.js": "/how_to_millionaire/static/js/2.74fcaa05.chunk.js",
-    "static/js/2.74fcaa05.chunk.js.map": "/how_to_millionaire/static/js/2.74fcaa05.chunk.js.map",
+    "static/js/2.9faaade4.chunk.js": "/how_to_millionaire/static/js/2.9faaade4.chunk.js",
+    "static/js/2.9faaade4.chunk.js.map": "/how_to_millionaire/static/js/2.9faaade4.chunk.js.map",
     "index.html": "/how_to_millionaire/index.html",
-    "precache-manifest.7e7af73cbaf28c25cbe0127a1922b19e.js": "/how_to_millionaire/precache-manifest.7e7af73cbaf28c25cbe0127a1922b19e.js",
+    "precache-manifest.af7285a8be1278e75faad311203d8af8.js": "/how_to_millionaire/precache-manifest.af7285a8be1278e75faad311203d8af8.js",
     "service-worker.js": "/how_to_millionaire/service-worker.js",
     "static/css/main.8bb91e14.chunk.css.map": "/how_to_millionaire/static/css/main.8bb91e14.chunk.css.map",
-    "static/js/2.74fcaa05.chunk.js.LICENSE.txt": "/how_to_millionaire/static/js/2.74fcaa05.chunk.js.LICENSE.txt",
+    "static/js/2.9faaade4.chunk.js.LICENSE.txt": "/how_to_millionaire/static/js/2.9faaade4.chunk.js.LICENSE.txt",
     "static/media/Button.svg": "/how_to_millionaire/static/media/Button.d9fef2b5.svg",
     "static/media/Close.svg": "/how_to_millionaire/static/media/Close.60007eb9.svg",
+    "static/media/Correct.svg": "/how_to_millionaire/static/media/Correct.a600a40c.svg",
     "static/media/Hand.svg": "/how_to_millionaire/static/media/Hand.f7dd51f8.svg",
     "static/media/Menu.svg": "/how_to_millionaire/static/media/Menu.ef9ecc44.svg",
+    "static/media/Selected.svg": "/how_to_millionaire/static/media/Selected.43f130dd.svg",
+    "static/media/Wrong.svg": "/how_to_millionaire/static/media/Wrong.e37ef584.svg",
     "static/media/current_question.svg": "/how_to_millionaire/static/media/current_question.da2d36e0.svg",
     "static/media/inactive_question.svg": "/how_to_millionaire/static/media/inactive_question.6eade976.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.78c0d121.js",
-    "static/js/2.74fcaa05.chunk.js",
+    "static/js/2.9faaade4.chunk.js",
     "static/css/main.8bb91e14.chunk.css",
-    "static/js/main.be14537b.chunk.js"
+    "static/js/main.0341088b.chunk.js"
   ]
 }
