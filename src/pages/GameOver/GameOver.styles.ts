@@ -27,6 +27,10 @@ export const Button = styled.button`
 
   color: #FFFFFF;
   
+  &:hover  {
+    background: #FFAC70;
+  }
+  
   @media only screen and (min-device-width: 768px) {
     width: 50%;
   }
@@ -55,9 +59,11 @@ export const DefaultText = styled.text`
   font-weight: 600;
   font-size: 2rem;
   line-height: 116%;
+  opacity: 0.5;
 
   display: flex;
   align-self: center;
+  
   @media only screen and (min-device-width: 768px) {
     align-self: unset;
   }
@@ -67,7 +73,7 @@ export const Text = styled.h1`
   display: flex;
 
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 116%;
 
   color: #1C1C21;

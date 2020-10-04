@@ -26,15 +26,13 @@ export const TextContainer = styled.div`
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  align-self: center;
-  text-wrap: normal;
 `;
 
 export const Text = styled.div`
   display: flex;
 
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 116%;
 
   color: #1C1C21;
@@ -44,4 +42,10 @@ export const Text = styled.div`
   flex-grow: 0;
   white-space: pre;
   padding-bottom: 4rem;
+  align-self: center;
+  
+  @media only screen and (min-device-width: 768px) {
+    font-size: 3.5rem;
+    align-self: unset;
+  }
 `;

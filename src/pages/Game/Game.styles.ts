@@ -43,6 +43,7 @@ export const DefaultText = styled.h1`
   font-weight: 600;
   font-size: 2rem;
   line-height: 116%;
+  justify-content: center;
 `;
 
 export const Text = styled.div`
@@ -86,8 +87,20 @@ export const MHiddenButton = styled(HiddenButton)`
 export const MobileContainer = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100%;
   
   &.mobileButtons {
       padding-bottom: unset;
   }
+`;
+
+export const TopBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1rem;
+`;
+
+export const BottomBox = styled.div`
+  display: flex;
+  flex-direction: row;
 `;

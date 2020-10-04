@@ -1,16 +1,18 @@
 import React from 'react';
 
 import {
-  MobileContainer,
-  MHiddenButton,
-  LeftContainer,
   Background,
-  StepContainer,
-  DefaultText,
   ButtonBox,
+  DefaultText,
+  LeftContainer,
+  MHiddenButton,
   MobileBackground,
-  MobileStepContainer,
   MobileButtonBox,
+  MobileContainer,
+  MobileStepContainer,
+  StepContainer,
+  TopBox,
+  BottomBox,
 } from './Game.styles';
 
 import Step from '../../components/Step';
@@ -18,7 +20,7 @@ import AnswerButton from '../../components/AnswerButton';
 
 export interface StartGameProps {
   onAnswer: (e: number) => void
-  answerArray?: string[]
+  answerArray: string[]
   stepArray?: number[]
   numberOfQuestion: number
   question?: string
@@ -45,6 +47,17 @@ function Game({
 }: StartGameProps):JSX.Element {
   const [openSteps, setOpenSteps] = React.useState<boolean>(true);
 
+  const array = answerArray.map((value, index):JSX.Element => (
+    <AnswerButton
+      className="mobileButtons"
+      key={value + question}
+      onClick={onAnswer}
+      answer={value}
+      number_answer={index}
+      right_answer={index === right_answer}
+    />
+  ));
+
   return (
     <>
       {isMobile
@@ -56,16 +69,7 @@ function Game({
                 <MobileContainer>
                   <DefaultText>{question}</DefaultText>
                   <MobileButtonBox key={question}>
-                    {answerArray?.map((value, index):JSX.Element => (
-                      <AnswerButton
-                        className="mobileButtons"
-                        key={value + index + question}
-                        onClick={onAnswer}
-                        answer={value}
-                        number_answer={index}
-                        right_answer={index === right_answer}
-                      />
-                    ))}
+                    {array}
                   </MobileButtonBox>
                 </MobileContainer>
               ) : (
@@ -87,16 +91,14 @@ function Game({
             <LeftContainer>
               <DefaultText>{question}</DefaultText>
               <ButtonBox key={question}>
-                {answerArray?.map((value, index):JSX.Element => (
-                  <AnswerButton
-                    className="desktop"
-                    key={value + index + question}
-                    onClick={onAnswer}
-                    answer={value}
-                    number_answer={index}
-                    right_answer={index === right_answer}
-                  />
-                ))}
+                <TopBox>
+                  {array[0]}
+                  {array[1]}
+                </TopBox>
+                <BottomBox>
+                  {array[2]}
+                  {array[3]}
+                </BottomBox>
               </ButtonBox>
             </LeftContainer>
             <StepContainer>

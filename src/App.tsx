@@ -66,12 +66,17 @@ function App():JSX.Element {
 
   return (
     <>
-      {backToStart && <StartGame onClick={onStartGame} />}
+      {backToStart
+      && (
+        <StartGame
+          onClick={onStartGame}
+        />
+      )}
       {endGame
       && (
         <Game
           onAnswer={nextQuestion}
-          answerArray={answerArray}
+          answerArray={answerArray || []}
           numberOfQuestion={numberOfQuestion}
           stepArray={stepArray}
           question={question}
