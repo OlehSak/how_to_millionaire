@@ -10,6 +10,7 @@ import {
   ButtonBox,
   MobileBackground,
   MobileStepContainer,
+  MobileButtonBox,
 } from './Game.styles';
 
 import Step from '../../components/Step';
@@ -22,6 +23,7 @@ export interface StartGameProps {
   numberOfQuestion: number
   question?: string
   isMobile: boolean
+  right_answer: number | undefined
 }
 
 const CalculateColor = (index: number, number: number):string => {
@@ -39,6 +41,7 @@ function Game({
   numberOfQuestion,
   question,
   isMobile,
+  right_answer,
 }: StartGameProps):JSX.Element {
   const [openSteps, setOpenSteps] = React.useState<boolean>(true);
 
@@ -52,16 +55,18 @@ function Game({
               ? (
                 <MobileContainer>
                   <DefaultText>{question}</DefaultText>
-                  <ButtonBox>
+                  <MobileButtonBox key={question}>
                     {answerArray?.map((value, index):JSX.Element => (
                       <AnswerButton
-                        key={value + index}
+                        className="mobileButtons"
+                        key={value + index + question}
                         onClick={onAnswer}
                         answer={value}
                         number_answer={index}
+                        right_answer={index === right_answer}
                       />
                     ))}
-                  </ButtonBox>
+                  </MobileButtonBox>
                 </MobileContainer>
               ) : (
                 <MobileStepContainer>
@@ -81,13 +86,15 @@ function Game({
           <Background>
             <LeftContainer>
               <DefaultText>{question}</DefaultText>
-              <ButtonBox>
+              <ButtonBox key={question}>
                 {answerArray?.map((value, index):JSX.Element => (
                   <AnswerButton
-                    key={value + index}
+                    className="desktop"
+                    key={value + index + question}
                     onClick={onAnswer}
                     answer={value}
                     number_answer={index}
+                    right_answer={index === right_answer}
                   />
                 ))}
               </ButtonBox>

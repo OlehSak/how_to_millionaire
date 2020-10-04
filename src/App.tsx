@@ -76,6 +76,7 @@ function App():JSX.Element {
           stepArray={stepArray}
           question={question}
           isMobile={isMobile}
+          right_answer={jsonString[0]?.questions?.[numberOfQuestion].correct_answer}
         />
       )}
       {startGame

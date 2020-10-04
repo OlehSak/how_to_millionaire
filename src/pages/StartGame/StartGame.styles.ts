@@ -34,7 +34,7 @@ export const Text = styled.div`
   display: flex;
 
   font-weight: 600;
-  font-size: 6vh;
+  font-size: 2.5rem;
   line-height: 116%;
 
   color: #1C1C21;

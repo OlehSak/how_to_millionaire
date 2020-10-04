@@ -27,19 +27,19 @@ export const LeftContainer = styled.div`
 `;
 
 export const ButtonBox = styled.div`
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 100%;
-  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+`;
+
+export const MobileButtonBox = styled(ButtonBox)`
 `;
 
 export const DefaultText = styled.h1`
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  margin-left: 4rem;
-  margin-top: 10rem;
-
+  margin: 2rem;
   font-weight: 600;
   font-size: 2rem;
   line-height: 116%;
@@ -72,6 +72,7 @@ export const MobileStepContainer = styled(StepContainer)`
   width: 100%;
   height: 100%;
   padding-top: 3rem;
+  background: #F5F5F7;
 `;
 
 export const MHiddenButton = styled(HiddenButton)`
@@ -85,4 +86,8 @@ export const MHiddenButton = styled(HiddenButton)`
 export const MobileContainer = styled.div`
   display: flex;
   flex-direction: column;
+  
+  &.mobileButtons {
+      padding-bottom: unset;
+  }
 `;
