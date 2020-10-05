@@ -20,6 +20,7 @@ export const LeftContainer = styled.div`
   flex-direction: column;
   margin: 0 1rem;
   width: 70%;
+  text-align: center;
 
   @media only screen and (max-device-width: 768px) {
     width: unset;
