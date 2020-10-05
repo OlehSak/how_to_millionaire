@@ -57,7 +57,7 @@ function Game({
       right_answer={index === right_answer}
     />
   ));
-  console.log('ismobile', isMobile);
+
   return (
     <>
       {isMobile
