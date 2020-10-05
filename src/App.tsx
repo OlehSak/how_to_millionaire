@@ -53,14 +53,14 @@ function App():JSX.Element {
   };
 
   React.useEffect(() => {
-    const autoCollapseSider = (): void => {
-      const smallWindow = window.innerWidth < 900;
+    const mobileDetector = (): void => {
+      const smallWindow = window.innerWidth < window.innerHeight;
       setIsMobile(smallWindow);
     };
 
-    window.addEventListener('resize', autoCollapseSider);
+    window.addEventListener('resize', mobileDetector);
     return ():void => {
-      window.removeEventListener('resize', autoCollapseSider);
+      window.removeEventListener('resize', mobileDetector);
     };
   }, []);
 

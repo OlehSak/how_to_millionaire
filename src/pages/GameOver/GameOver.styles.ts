@@ -55,7 +55,7 @@ export const TextContainer = styled.div`
   text-wrap: normal;
 `;
 
-export const DefaultText = styled.text`
+export const DefaultText = styled.h1`
   font-weight: 600;
   font-size: 2rem;
   line-height: 116%;

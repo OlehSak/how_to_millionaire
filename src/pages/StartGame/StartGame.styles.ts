@@ -15,6 +15,7 @@ export const Container = styled.div`
   display: flex;
   flex-grow: 1;
   margin: 0 1rem;
+  justify-content: center;
 `;
 
 export const Hand = styled.img`
@@ -26,6 +27,7 @@ export const TextContainer = styled.div`
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const Text = styled.div`
