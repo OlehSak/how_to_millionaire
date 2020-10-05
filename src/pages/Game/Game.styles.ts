@@ -97,10 +97,12 @@ export const MobileContainer = styled.div`
 export const TopBox = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding-bottom: 1rem;
 `;
 
 export const BottomBox = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
 `;
