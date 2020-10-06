@@ -50,7 +50,7 @@ function Game({
   const array = answerArray.map((value, index):JSX.Element => (
     <AnswerButton
       className="mobileButtons"
-      key={value + question}
+      key={value + question + numberOfQuestion}
       onClick={onAnswer}
       answer={value}
       number_answer={index}
@@ -68,7 +68,7 @@ function Game({
               ? (
                 <MobileContainer>
                   <DefaultText>{question}</DefaultText>
-                  <MobileButtonBox key={question}>
+                  <MobileButtonBox key={numberOfQuestion}>
                     {array}
                   </MobileButtonBox>
                 </MobileContainer>
@@ -90,7 +90,7 @@ function Game({
           <Background>
             <LeftContainer>
               <DefaultText>{question}</DefaultText>
-              <ButtonBox key={question}>
+              <ButtonBox key={numberOfQuestion}>
                 <TopBox>
                   {array[0]}
                   {array[1]}
