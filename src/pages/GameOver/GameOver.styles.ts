@@ -24,6 +24,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
 
   color: #FFFFFF;
   
